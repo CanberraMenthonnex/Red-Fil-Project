@@ -2,7 +2,7 @@
 
 
 Ce projet a été réalisé dans un cadre scolaire pour l'IIM
-Contributors: Armand Dorard, Lucas Daval et Canberra Menthonnex
+Contributors: Canberra Menthonnex
 
 Pour faire fonctionner ce projet merci de pointer (document root) le serveur sur le dossier Public du projet.
 
@@ -12,6 +12,7 @@ ainsi que de modifier les constantes dans le fichier configDb.php (dossier Confi
 Pour activer la fonctionnalité d'envoi de mail, il faut activer "Mail Sender" dans les paramètres de votre Laragon ou autre systeme de gestion de serveur Apache.
 Et aussi activer les autorisations d'envoi de votre messagerie (Gmail).
 
+-Faire un npm install dans le dossier Public/js pour installer les nodes modules 
 
 Fonctionnalités:
 -Creation de compte

@@ -1,0 +1,105 @@
+#mainImage{
+    background-image: url("../../img/background.jpg");
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    color: white;
+}
+
+#dernierQuizz{
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#nosQuizz{
+    text-align: center;
+    height: 30vh;
+}
+
+
+#galerieImage{
+    #images{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+    }
+
+    h2{
+        text-align: center;
+    }
+}
+
+#newsletter{
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p{
+        font-size: $LFont;
+    }
+    input{
+        height: 30px;
+        width: 25%;
+        padding: 5px;
+        margin: 10px;
+        border-radius: 8px;
+        border-width: 0px;
+        background-color: $grey;
+    }button{
+        padding: 7px 20px;
+        border-radius: 5px;
+        background-color: white;
+        border: dotted blue;
+    }
+    
+}
+
+#connexion-section{
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#profil-section{
+    height: 100vh;
+    article{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 50vh;
+        
+        
+        margin-left: 50px;
+        font-family: $Poppins;
+    }
+}
+
+#formulaire-section{
+    height: 80vh;
+    margin-top: 50px;
+    h2{
+        text-align: center;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        #Question{
+            width: 200px;
+        }
+        input{
+            background-color: $grey;
+            margin-left: 100px;
+            margin-top: 10px;
+        }
+
+    }
+}

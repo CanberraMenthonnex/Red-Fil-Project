@@ -1,0 +1,19 @@
+.navHeader{
+    width: 40%;
+    ul{
+        display: flex;
+        margin-right: 2rem;
+        justify-content: space-around;
+        li{
+            list-style: none;
+            font-size: $MFont;
+        }
+    }
+    a{
+        font-size: $LFont;
+    }
+}   
+
+
+
+

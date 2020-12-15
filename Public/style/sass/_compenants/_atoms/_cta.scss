@@ -1,0 +1,36 @@
+a{
+    text-decoration: none;
+    color: black;
+    font-family: $Poppins;
+}
+
+.buttonConnexion{
+    border: dotted blue;
+    border-width: 3px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+#lienDernierQuizz{
+    margin-left: 15rem;
+    font-size: $MFont;
+    
+}
+
+input{
+    border:none;
+    height: 25px;
+    border-radius: 10px;
+    padding-left: 7px;
+}
+
+
+.submitButton{
+    width: 100px;
+    border-radius: 5px;
+    padding: 2px;
+    background-color: white;
+    font-family: $Poppins;
+    margin-top: 10px;
+}

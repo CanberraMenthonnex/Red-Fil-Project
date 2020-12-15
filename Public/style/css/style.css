@@ -1,0 +1,265 @@
+.Roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+.Grey {
+  color: lightgrey;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+hr {
+  width: 30%;
+  margin-left: 35%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: "Poppins", sans-serif;
+}
+
+.buttonConnexion {
+  border: dotted blue;
+  border-width: 3px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+#lienDernierQuizz {
+  margin-left: 15rem;
+  font-size: 1.5rem;
+}
+
+input {
+  border: none;
+  height: 25px;
+  border-radius: 10px;
+  padding-left: 7px;
+}
+
+.submitButton {
+  width: 100px;
+  border-radius: 5px;
+  padding: 2px;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  margin-top: 10px;
+}
+
+img {
+  width: 30rem;
+  height: 20rem;
+  margin-top: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  color: white;
+  font-size: 4rem;
+  padding: 6rem 3rem;
+  font-family: "Roboto", sans-serif;
+}
+
+h2 {
+  font-size: 2rem;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+#h2Challenge {
+  text-decoration: underline;
+  margin-left: 5rem;
+}
+
+#h2main {
+  font-size: 2rem;
+  background-color: grey;
+  text-transform: uppercase;
+  padding-left: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 5rem;
+  height: 80px;
+}
+
+#mainImage {
+  background-image: url("../../img/background.jpg");
+  background-size: cover;
+  height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  color: white;
+}
+
+#dernierQuizz {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#nosQuizz {
+  text-align: center;
+  height: 30vh;
+}
+
+#galerieImage #images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#galerieImage h2 {
+  text-align: center;
+}
+
+#newsletter {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#newsletter p {
+  font-size: 2rem;
+}
+#newsletter input {
+  height: 30px;
+  width: 25%;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 8px;
+  border-width: 0px;
+  background-color: lightgrey;
+}
+#newsletter button {
+  padding: 7px 20px;
+  border-radius: 5px;
+  background-color: white;
+  border: dotted blue;
+}
+
+#connexion-section {
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#profil-section {
+  height: 100vh;
+}
+#profil-section article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50vh;
+  margin-left: 50px;
+  font-family: "Poppins", sans-serif;
+}
+
+#error-section{
+  background-color: lightgrey;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 80vh;
+}
+
+
+#formulaire-section {
+  height: 80vh;
+  margin-top: 50px;
+}
+#formulaire-section h2 {
+  text-align: center;
+}
+#formulaire-section form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#formulaire-section form #Question {
+  width: 200px;
+}
+#formulaire-section form input {
+  background-color: lightgrey;
+  margin-left: 100px;
+  margin-top: 10px;
+}
+
+footer {
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightgrey;
+}
+footer article {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 30%;
+}
+footer article li {
+  margin-top: 5px;
+}
+footer a {
+  margin-left: 100px;
+}
+
+.navHeader {
+  width: 40%;
+}
+.navHeader ul {
+  display: flex;
+  margin-right: 2rem;
+  justify-content: space-around;
+}
+.navHeader ul li {
+  list-style: none;
+  font-size: 1.5rem;
+}
+.navHeader a {
+  font-size: 1.5rem;
+}
+
+.connexion-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 60vh;
+  background-color: lightgrey;
+  border-radius: 20px;
+}
+.connexion-card form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+.connexion-card label {
+  font-family: "Poppins", sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */

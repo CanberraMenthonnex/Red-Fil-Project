@@ -1,0 +1,27 @@
+h1{
+    color: white;
+    font-size: $XLFont;
+    padding: 6rem 3rem;
+    font-family: $Roboto;
+}
+
+h2{
+    font-size: $LFont;
+    color: black;
+    font-family: $Roboto;
+    font-weight: 500;
+}
+
+#h2Challenge{
+    text-decoration: underline;
+    margin-left: 5rem;
+}
+
+
+#h2main{
+    font-size: $LFont;
+    background-color: grey;
+    text-transform: uppercase;
+    padding-left: 10px;
+    font-family: $Poppins;
+}

@@ -49,15 +49,19 @@ if(array_key_exists("page", $_GET)){
             $controller = new AddSurveyController();
             $controller->renderAddSurvey();
             break;
+
         case 'friendList':
-            $controller = new FriendController();
-            $controller->renderFriend();
+            $controller = new ProfilController();
+            $controller->displayFriend();
             break;
 
 
 
 
-
+        case 'connexionAdmin':
+            $controller = new AdminController();
+            $controller->renderController();
+            break;
 
 
         case 'logout':
@@ -83,6 +87,8 @@ if(array_key_exists("page", $_GET)){
             $controller = new LoginController();
             $controller->log();
             break;
+
+            
         case 'homesign':
             $controller = new SignController();
             $controller->validateSign();

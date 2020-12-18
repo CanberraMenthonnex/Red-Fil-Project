@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../Public/style/css/style.css">
+    <link rel="stylesheet" href="style/css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,300&family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
@@ -18,16 +18,22 @@
         <section id="connexion-section">
             <article class="connexion-card">
                 <h2>Inscription</h2>
-                <form action="">
-                    <label for="Prenom">Votre Prénom</label><input type="text" name="Prenom">
-                    <label for="Nom">Votre Nom</label><input type="text" name="Nom">
-                    <label for="Pseudo">Votre Pseudo</label><input type="text" name="Pseudo">
-                    <label for="pwd">Votre mot de passe </label><input type="password" name="pwd">
-                    <label for="pwd_check">Confirmation de votre MDP</label><input type="password" name="pwd_check"> 
-                    <input class="submitButton" type="submit">
+                <?php
+                    if(isset($that_fcking_error)){
+                        echo $that_fcking_error;
+                    }
+                ?>
+                <form action="?page=homesign" method="post">
+                    <label for="Prenom">Votre Prénom</label><input type="text" name="firstname">
+                    <label for="Nom">Votre Nom</label><input type="text" name="lastname">
+                    <label for="Pseudo">Votre Pseudo</label><input type="text" name="pseudo">
+                    <label for="Email">Vortre Email</label><input type="email" name="email">
+                    <label for="pwd">Votre mot de passe </label><input type="password" name="password">
+                    <label for="pwd_check">Confirmation de votre MDP</label><input type="password" name="checkPassword"> 
+                    <input class="submitButton" type="submit" value="Créer">
                 </form>
                 <br>
-                <a href="?page=login">Se connecter</a>
+                <a href="?page=Login">Se connecter</a>
             </article>
         </section>
 

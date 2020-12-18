@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../Public/style/css/style.css">
+    <link rel="stylesheet" href="style/css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,300&family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
@@ -19,13 +19,18 @@
         <section id="profil-section">
             <h1 class="Grey">Votre profil:</h1>
             <article>
-                <p>Votre prénom : </p>
-                <p>Votre nom : </p>
-                <p>Votre pseudo : </p>
-                <p>Votre email : </p>
+                <p>Votre prénom : <?= $_SESSION['firstname'] ?></p>
+                <p>Votre nom : <?= $_SESSION['lastname'] ?></p>
+                <p>Votre pseudo : <?= $_SESSION['pseudo'] ?></p>
+                <p>Votre email : <?= $_SESSION['email'] ?></p>
 
                 <aside>
                     <p>La liste de vos amis:</p>
+                    <?php 
+                        foreach($friendDisp as $friend){
+                        echo $friend["friend"] . "<br>";
+                        }
+                    ?>
                 </aside>
             </article>
             

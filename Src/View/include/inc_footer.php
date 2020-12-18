@@ -1,5 +1,5 @@
 <footer>
-        <a href="" class="buttonConnexion">Connexion</a>
+        <a href="?page=login" class="buttonConnexion">Connexion</a>
         <article>
             
             <nav>

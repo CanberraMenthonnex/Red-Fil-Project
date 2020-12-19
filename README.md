@@ -1,5 +1,4 @@
-# Projet-Ajax + PHP POO + SQL
-
+# Projet-Fil-Rouge
 
 Ce projet a été réalisé dans un cadre scolaire pour l'IIM
 Contributors: Canberra Menthonnex
@@ -12,7 +11,7 @@ ainsi que de modifier les constantes dans le fichier configDb.php (dossier Confi
 Pour activer la fonctionnalité d'envoi de mail, il faut activer "Mail Sender" dans les paramètres de votre Laragon ou autre systeme de gestion de serveur Apache.
 Et aussi activer les autorisations d'envoi de votre messagerie (Gmail).
 
--Faire un npm install dans le dossier Public/js pour installer les nodes modules 
+-Faire un npm install à la racine du projet pour installer les nodes modules 
 
 Fonctionnalités:
 -Creation de compte

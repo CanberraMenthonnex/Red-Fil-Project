@@ -10,7 +10,8 @@ use Src\Controller\{
     LoginController,
     ProfilController,
     ResultController,
-    SignController
+    SignController,
+    AdminController
 };
 
 
@@ -60,7 +61,7 @@ if(array_key_exists("page", $_GET)){
 
         case 'connexionAdmin':
             $controller = new AdminController();
-            $controller->renderController();
+            $controller->renderAdmin();
             break;
 
 

@@ -7,10 +7,6 @@ use Src\Models\SurveyModel;
 
 class ResultController extends DefaultController{
 
-
-
-
-
     public function renderResult(){
         $defControl = new DefaultController();
         return $defControl->render("result");

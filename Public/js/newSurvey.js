@@ -22,13 +22,16 @@ $( "form" ).submit(function( event ) {
         dataType:"json",
         data:sendData,
         success:function(response){
-            
             console.log("Sucess");
-            $("#respond").append("Survey non crée");
+            alert("Sondage ajouté");
+            $("#respond").append("Survey bien ajouté");
+            
         },
         error :function(){
             console.log("error");
-            $("#respond").append("Survey ajouté");
+            $("#respond").append("Survey non ajouté");
+            window.location.reload();
+            
         }
     })
   });

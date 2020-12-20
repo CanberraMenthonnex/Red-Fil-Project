@@ -10,26 +10,23 @@
     <title>Admin</title>
 </head>
 <body>
-    <header>
-        <nav class="navHeader">
-            <ul>
-                <li>Accueil</li>
-                <li>Quizz</li>
-                <li>Résultats</li>
-                <li>Images</li>
-                <li>Blog</li>
-            </ul>
-        </nav>
-        <a href="" class="buttonConnexion">Connexion</a>
-    </header>
+    <?php
+        require_once "include/inc_header.php"
+    ?>
+
 
     <main>
         <section id="connexion-section">
             <article class="connexion-card">
                 <h2>Connexion Admin</h2>
-                <form action="">
+                <?php
+                    if(isset($msgErrorLog)){
+                        echo $msgErrorLog;
+                    }
+                ?>
+                <form action="?page=logCheckAdmin" method="post">
                     <label for="email">Votre email</label><input type="email" name="email">
-                    <label for="pwd">Votre mot de passe </label><input type="password" name="pwd">
+                    <label for="password">Votre mot de passe </label><input type="password" name="password">
                     <input class="submitButton" type="submit">
                 </form>
                 <br>

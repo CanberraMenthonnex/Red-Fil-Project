@@ -7,7 +7,6 @@ $( document ).ready(function(){
             console.log("sucess")
             response.forEach(message => {
                 $("#surveyList").append(
-                `<p>${message.user}</p>`,
                 `<p>${message.question}</p>`,
                 `<p>${message.answer_1} ${message.answer_2} ${message.answer_3} ${message.answer_4}</p>`,
                 "<hr>"
@@ -16,6 +15,7 @@ $( document ).ready(function(){
         },
             error: function(){
                 console.log("error")
+                
             }
     })
 })

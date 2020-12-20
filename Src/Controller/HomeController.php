@@ -6,6 +6,7 @@ namespace Src\controller;
 
 use Core\Controller\DefaultController;
 use Src\Models\UserModel;
+use Src\Models\Model;
 
 class HomeController extends DefaultController{
 
@@ -27,6 +28,14 @@ class HomeController extends DefaultController{
 
         echo json_encode($survey);
 
+    }
+
+
+    public function displaySurvey(){
+        $survey = new Model();
+        $displaySurvey = $survey->getAll("survey");
+
+        echo json_encode($displaySurvey);
     }
 }
 

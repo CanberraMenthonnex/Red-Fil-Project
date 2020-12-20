@@ -55,4 +55,36 @@ class LoginController extends DefaultController{
         }
        
     }
+
+    public function logAdmin(){
+        if($this->checkPostKeys($_POST,["email","password"])){
+            $email = $_POST["email"];
+            $password = $_POST["password"];
+            $userInfos = new UserModel($email, $password);
+            $compare = $userInfos->searchAdmin();
+            if($compare){
+                if(password_verify($password, $compare['password'])){
+                    Session::set($compare);
+                    $session = $_SESSION;
+                    $userInfos->setConnection(1, $_SESSION['email']);
+                    $sendFname = $compare['firstname'];
+                    $_SESSION["Admin"] = true;
+                    return $this->render('admin', compact("session", "sendFname"));
+
+
+                }else{
+                    $msgErrorLog = "Mot de passe incorrect";
+                }
+            }else{
+                $msgErrorLog = "Identifiant incorrect";
+            }
+        }else{
+            $msgErrorLog = "Renseignez tous les champs pour vous connecter";
+
+        }
+        if (isset($msgErrorLog)){
+            return $this->render('Connexion-admin', compact("msgErrorLog"));
+        }
+       
+    }
 }             

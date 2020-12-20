@@ -27,7 +27,8 @@
             <article>
                 <h2>Nouveau formulaire:</h2>
                 <br>
-                <form id="newSurvey" action="" method="post">
+                <form id="newSurvey" action="?page=home +"
+                 method="post">
                     <label for="">Votre question<input type="text" name="question" id="Question"></label>
                     <label for="">Choix: 1<input type="text" name="question" id="A1"></label>
                     <label for="">Choix: 2<input type="text" name="question" id="A2"></label>
@@ -35,14 +36,16 @@
                     <label for="">Choix: 4<input type="text" name="question" id="A4"></label>
                     <br>
                     <button id="sendForm" type="submit">Créer</button>
+                    <p id="respond"></p>
                 </form>
-
+            
                 
             </article>
 
             <article>
                 <h2>Liste de nos formulaire</h2>
                 <br>
+                <p id="surveyList"></p>
             </article>
         </section>
 
@@ -71,6 +74,8 @@
                 
             </article>
         </footer>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/newSurvey.js"></script>
+    <script src="js/home.js"></script>
     </body>
 </html>

@@ -26,6 +26,12 @@ class UserModel extends Model{
         return $infos;
     }
 
+    public function searchAdmin(){
+        $infos = $this->getOne('admin', 'email',$this->email);
+
+        return $infos;
+    }
+
     public function addUser(array $infos){
         $this->insert('user', $infos);
     }

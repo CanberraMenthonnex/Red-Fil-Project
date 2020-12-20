@@ -61,7 +61,7 @@ if(array_key_exists("page", $_GET)){
 
         case 'connexionAdmin':
             $controller = new AdminController();
-            $controller->renderAdmin();
+            $controller->renderConnexionAdmin();
             break;
 
 
@@ -89,7 +89,11 @@ if(array_key_exists("page", $_GET)){
             $controller->log();
             break;
 
-            
+        case 'logCheckAdmin':
+            $controller = new LoginController();
+            $controller->logAdmin();
+            break;
+        
         case 'homesign':
             $controller = new SignController();
             $controller->validateSign();
@@ -100,13 +104,13 @@ if(array_key_exists("page", $_GET)){
         //survey
 
         case 'sendSurvey':
-            $controller = new AddSurveyController();
+            $controller = new AdminController();
             $controller->postSurvey($_POST);
             break;
 
         case 'getSurvey':
             $controller = new HomeController();
-            $controller->displayFriendSurvey($_SESSION["email"]);
+            $controller->displaySurvey();
             break;
         //chat
 

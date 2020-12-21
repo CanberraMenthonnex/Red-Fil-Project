@@ -18,7 +18,7 @@ Fonctionnalités:
 -Creation de compte
 -Connexion
 -Creation de sondage
--Affichage des sondages des amis
+-Affichage des sondages créer par l'admin
 
 
 

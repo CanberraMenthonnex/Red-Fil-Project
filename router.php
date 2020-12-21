@@ -43,7 +43,7 @@ if(array_key_exists("page", $_GET)){
 
         case 'profil':
             $controller = new ProfilController();
-            $controller->renderProfil();
+            $controller->displayFriend();
             break;
 
             

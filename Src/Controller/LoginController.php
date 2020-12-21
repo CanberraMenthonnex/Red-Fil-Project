@@ -53,7 +53,9 @@ class LoginController extends DefaultController{
                     $session = $_SESSION;
                     $userInfos->setConnection(1, $_SESSION['email']);
                     $sendFname = $compare['firstname'];
-                    return $this->render('profil', compact("session", "sendFname"));
+                    $profil = new ProfilController();
+                    $profil->displayFriend();
+                    //return $this->render('profil', compact("session", "sendFname"));
 
 
                 }else{

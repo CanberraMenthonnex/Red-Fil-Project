@@ -8,13 +8,22 @@ use Src\Models\Model;
 
 
 class ProfilController extends DefaultController{
-
+    
+    /**
+     * Method renderProfil
+     *
+     * @return void
+     */
     public function renderProfil(){
         $defControl = new DefaultController();
         return $defControl->render("profil");
-        // require ROOT."/Src/View/Home.php";
     }
-
+    
+    /**
+     * Method displayFriend
+     *
+     * @return void
+     */
     public function displayFriend(){
 
         if(isset($_SESSION["firstname"])){
@@ -31,9 +40,16 @@ class ProfilController extends DefaultController{
     }
 
     }
-
+    
+    /**
+     * Method searchFriend
+     *
+     * @param $friend $friend [explicite description]
+     *
+     * @return void
+     */
     public function searchFriend($friend){
-        // var_dump($friend);
+
         $newFriend = $friend["content"];
         
         $query = new Model();

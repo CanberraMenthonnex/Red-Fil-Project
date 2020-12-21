@@ -206,6 +206,16 @@ header {
   margin-top: 10px;
 }
 
+p#surveyList{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  line-height: 30px;
+  font-weight: 600;
+}
+
 footer {
   height: 20vh;
   display: flex;

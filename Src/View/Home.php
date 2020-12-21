@@ -29,6 +29,7 @@
         </section>
         <section id="nosQuizz">
             <h2>La liste de nos Quizz:</h2>
+                <p id="surveyList"> </p>
             <hr>
         </section>
         <section id="galerieImage">
@@ -57,7 +58,9 @@
 
     ?>
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/newSurvey.js"></script>
+    <script src="js/home.js"></script>
     <script src="js/gulpfile.js"></script>
 </body>
 </html>

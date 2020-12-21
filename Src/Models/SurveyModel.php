@@ -9,26 +9,40 @@ class SurveyModel extends Model{
             parent::__construct();
         }
 
-
+    
+    /**
+     * Method getMessage
+     *
+     * @return void
+     */
     public function getMessage(){
 
         $query = $this->_db->query("SELECT * FROM chat");
         return $query->fetchAll(\PDO::FETCH_ASSOC);
     }
 
-
+    
+    /**
+     * Method sendMessage
+     *
+     * @param $data $data [explicite description]
+     *
+     * @return void
+     */
     public function sendMessage($data){
         $prepare = $this->_db->prepare("INSERT INTO chat (message) VALUES (:content)");
         $prepare->execute($data);
     }
 
 
-    // public function postMessage($data){
-    //     $prepare = $this->_db->prepare("INSERT INTO chat (content) VALUES (:content)");
-    //     $prepare->execute($data);
-    //     echo json_encode("");
-    // }
-
+    
+    /**
+     * Method sendSurvey
+     *
+     * @param $data $data [explicite description]
+     *
+     * @return void
+     */
     public function sendSurvey($data){
         $mail = $_SESSION["email"];
         $_db = new \PDO("mysql:host=localhost;dbname=data_base", "root", "root");
@@ -43,7 +57,12 @@ class SurveyModel extends Model{
         ));
         
     }
-
+    
+    /**
+     * Method prepareSendingMail
+     *
+     * @return void
+     */
     public function prepareSendingMail(){
         $moi = $_SESSION['email'];
         $request = $this->_db->query("SELECT friend FROM friends WHERE user_email =" . "'$moi'");
@@ -56,7 +75,14 @@ class SurveyModel extends Model{
 
             $this->sendMail($friend['friend']);
         }
-    }
+    }    
+    /**
+     * Method sendMail
+     *
+     * @param $user user email
+     *
+     * @return void
+     */
     public function sendMail($user){
         $to      = $user;
         $subject = 'Nouveau sondage de ' . $_SESSION["firstname"] ;

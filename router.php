@@ -1,11 +1,9 @@
 <?php
 session_start();
-// session_destroy ();
 
 use Src\Controller\{
     AddSurveyController,
     ErrorController,
-    FriendController,
     HomeController,
     LoginController,
     ProfilController,
@@ -13,6 +11,9 @@ use Src\Controller\{
     SignController,
     AdminController
 };
+
+
+//Router qui redirige la page en fonction de l'URL, ?page=
 
 
 if(array_key_exists("page", $_GET)){
@@ -139,11 +140,3 @@ if(array_key_exists("page", $_GET)){
     $controller = new HomeController();
     $controller->renderHome();
 }
-
-
-
-
-        // case 'profil':
-        //     $controller = new ProfilController();
-        //     $controller->renderProfil();
-        //     break;

@@ -10,7 +10,14 @@ class AddSurveyController extends DefaultController{
         $defControl = new DefaultController();
         return $defControl->render("addSurvey");
     }
-
+    
+    /**
+     * Method postSurvey
+     *
+     * @param $data $data to push
+     *
+     * @return void
+     */
     public function postSurvey($data)
     {   
         $envoi = new SurveyModel();

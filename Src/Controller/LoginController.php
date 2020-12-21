@@ -8,14 +8,24 @@ use Core\Tools\Session;
 
 class LoginController extends DefaultController{
 
-
+    
+    /**
+     * Method renderLogin
+     *
+     * @return void
+     */
     public function renderLogin(){
         $defControl = new DefaultController();
         return $defControl->render("login");
-        // require ROOT."/Src/View/Home.php";
     }
 
-    
+        
+    /**
+     * Method logOut
+     *
+     * function log out
+     * @return void
+     */
     public function logOut(){
         if($_SESSION){
             $userInfos = new UserModel($_SESSION["email"], $_SESSION["password"]);
@@ -24,7 +34,13 @@ class LoginController extends DefaultController{
         }        
         $this->renderLogin();
     }
-
+    
+    /**
+     * Method log
+     *
+     * function log in 
+     * @return void
+     */
     public function log(){
         if($this->checkPostKeys($_POST,["email","password"])){
             $email = $_POST["email"];
@@ -55,7 +71,14 @@ class LoginController extends DefaultController{
         }
        
     }
-
+    
+    /**
+     * Method logAdmin
+     *
+     * Function for log in admin 
+     * 
+     * @return void
+     */
     public function logAdmin(){
         if($this->checkPostKeys($_POST,["email","password"])){
             $email = $_POST["email"];

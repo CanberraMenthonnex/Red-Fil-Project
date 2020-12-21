@@ -7,12 +7,21 @@ use Core\Tools\ValidatorString;
 use Src\Models\UserModel;
 
 class SignController extends DefaultController{
-
+    
+    /**
+     * Method renderSign
+     *
+     * @return void
+     */
     public function renderSign(){
         return $this->render("sign");
-        // require ROOT."/Src/View/Home.php";
     }
-
+    
+    /**
+     * Method validateSign
+     *
+     * @return void
+     */
     public function validateSign(){
         if($this->checkPostKeys($_POST, ['firstname', 'lastname', 'email', 'pseudo', 'password', 'checkPassword']) && ($_POST['password'] === $_POST['checkPassword'])){
             $firstname = $_POST['firstname'];

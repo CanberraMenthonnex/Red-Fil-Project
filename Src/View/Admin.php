@@ -43,9 +43,8 @@
             </article>
 
             <article>
-                <h2>Liste de nos formulaire</h2>
                 <br>
-                <p id="surveyList"></p>
+                <p id="surveyList">Liste des formualaire déjà existant</p>
             </article>
         </section>
 
